@@ -1,7 +1,7 @@
 SerenityNow
 ===========
 
-Ruby wrapper for [TVRage API][rage].
+Minimalist Ruby wrapper for [TVRage API][rage].
 
 "Serenity now, insanity later"
 
@@ -9,17 +9,7 @@ Ruby wrapper for [TVRage API][rage].
 Installation
 ------------
 
-Add this line to your application's Gemfile:
-
-    gem 'serenity_now'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install serenity_now
+TODO
 
 
 Usage
@@ -41,7 +31,7 @@ Contributing
 License
 -------
 
-[MIT][licence]
+[MIT][license]
 
 
 [rage]: http://services.tvrage.com/

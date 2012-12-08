@@ -9,13 +9,25 @@ Minimalist Ruby wrapper for [TVRage API][rage].
 Installation
 ------------
 
-TODO
+Add this line to your application's Gemfile:
+
+    gem 'serenity_now'
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install serenity_now
 
 
 Usage
 -----
 
-TODO
+    @api = SerenityNow::SerenityAPI.new
+    @api.search('buffy')
+    @api.search('buffy', true) # for detailed show info
 
 
 Contributing

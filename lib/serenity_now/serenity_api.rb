@@ -13,6 +13,10 @@ require 'httparty'
 # Show Info + Episode List   /full_show_info.php?sid=SHOWID
 # Episode List               /episode_list.php?sid=SHOWID
 # Episode Info               /episodeinfo.php?show=SHOWNAME&exact=1&ep=SEASONxEPISODE
+# US Episode List            /fullschedule.php?country=US
+# UK Episode List            /fullschedule.php?country=UK
+# NL Episode List            /fullschedule.php?country=NL
+# US Episode List (24h)      /fullschedule.php?country=US&24_format=1
 #
 # Examples for 'Buffy'
 # --------------------
@@ -58,6 +62,15 @@ module SerenityNow
     def e_info( show_id, episode )
       query = { sid: show_id, ep: episode }
       self.class.get( '/episodeinfo.php', query: query )
+    end
+
+    #
+    # Full Schedule
+    # available options: { country: 'US', 24_format: '1' }
+    #
+    def schedule( country = 'US', format24 = false )
+      uri = "/fullschedule.php?country="+country+"&24_format=" + (format24 ? '1' : '0')
+      self.class.get( uri )
     end
 
   end

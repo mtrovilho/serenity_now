@@ -59,7 +59,7 @@ module SerenityNow
     #
     # Episode Info
     #
-    def e_info( show_id, episode )
+    def e_info( show_id, episode='' )
       query = { sid: show_id, ep: episode }
       self.class.get( '/episodeinfo.php', query: query )
     end

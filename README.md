@@ -25,9 +25,16 @@ Or install it yourself as:
 Usage
 -----
 
-    @api = SerenityNow::SerenityAPI.new
-    @api.search('buffy')
-    @api.search('buffy', true) # for detailed show info
+    SerenityNow.search('buffy')
+    SerenityNow.search('buffy', true) # detailed show info
+
+    SerenityNow.info(:show_id, true) # show info and episode list
+
+    SerenityNow.list(:show_id) # only episode list
+    SerenityNow.e_info(:show_id, :ep_no) # episode info, :ep_no is optional
+
+    # data from http://services.tvrage.com/info.php?page=fullschedule
+    SerenityNow.schedule
 
 
 Contributing

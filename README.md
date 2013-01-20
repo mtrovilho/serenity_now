@@ -1,5 +1,8 @@
 SerenityNow
 ===========
+[![Dependency Status](https://gemnasium.com/mtrovilho/serenity_now.png)](https://gemnasium.com/mtrovilho/serenity_now)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mtrovilho/serenity_now)
+
 
 Minimalist Ruby wrapper for [TVRage API][rage].
 

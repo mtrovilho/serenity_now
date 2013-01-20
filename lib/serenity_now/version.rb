@@ -1,3 +1,9 @@
+##
+# Serenity module :)
+#
 module SerenityNow
-  VERSION = "1.0.0"
+  ##
+  # Gem version
+  #
+  VERSION = '1.0.0'
 end

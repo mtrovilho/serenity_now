@@ -1,5 +1,2 @@
-require "serenity_now/version"
-
-module SerenityNow
-  # Your code goes here...
-end
+require 'serenity_now/version'
+require 'serenity_now/serenity_api'
